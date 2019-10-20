@@ -8,7 +8,7 @@ import com.vaadin.flow.component.textfield.TextField
 import com.vaadin.flow.data.value.ValueChangeMode
 import com.vaadin.flow.router.Route
 
-@Route("customer/list", layout = MainView::class)
+@Route("customer/list", layout = MainLayout::class)
 class CustomerList :  VerticalLayout() {
 
     private val grid = Grid<Customer>(Customer::class.java)

@@ -29,11 +29,13 @@ val testContainersVersion = "1.12.2"
 dependencies {
 	implementation("org.springframework.boot", "spring-boot-devtools")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("org.springframework.boot:spring-boot-starter-security")
 	implementation("org.flywaydb:flyway-core")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("com.vaadin:vaadin-bom:$vaadinVersion")
 	implementation("com.vaadin:vaadin-spring-boot-starter:$vaadinVersion")
+	implementation("io.github.microutils", "kotlin-logging", "1.6.26")
 	runtimeOnly("mysql:mysql-connector-java")
 	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 	implementation("org.testcontainers", "testcontainers", testContainersVersion)
