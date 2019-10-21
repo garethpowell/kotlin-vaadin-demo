@@ -27,7 +27,7 @@ class SecurityConfiguration : WebSecurityConfigurerAdapter() {
         private const val LOGIN_PROCESSING_URL = "/login"
         private const val LOGIN_FAILURE_URL = "/login"
         private const val LOGIN_URL = "/login"
-        private const val LOGOUT_SUCCESS_URL = "/logout"
+        private const val LOGOUT_SUCCESS_URL = "/login"
     }
 
     /**
@@ -54,10 +54,8 @@ class SecurityConfiguration : WebSecurityConfigurerAdapter() {
                 .and().formLogin().loginPage(LOGIN_URL).permitAll().loginProcessingUrl(LOGIN_PROCESSING_URL)
                 .failureUrl(LOGIN_FAILURE_URL).successForwardUrl("/home")
 
-//                .and().logout().logoutUrl("/logout").logoutSuccessUrl("/logout")
-
                 // Configure logout
-                .and().logout().logoutSuccessUrl(LOGOUT_SUCCESS_URL)
+                .and().logout().logoutUrl("/perform_logout").logoutSuccessUrl(LOGOUT_SUCCESS_URL)
     }
 
     @Bean

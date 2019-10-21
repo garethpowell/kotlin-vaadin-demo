@@ -1,5 +1,6 @@
 package com.example.kotlinvaadin
 
+import com.example.kotlinvaadin.view.MainLayout
 import com.vaadin.flow.component.grid.Grid
 import com.vaadin.flow.component.grid.GridVariant
 import com.vaadin.flow.component.html.H1

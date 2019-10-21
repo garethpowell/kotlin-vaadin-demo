@@ -1,6 +1,5 @@
 package com.example.kotlinvaadin.view
 
-import com.example.kotlinvaadin.MainLayout
 import com.vaadin.flow.component.button.Button
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout
 import com.vaadin.flow.component.orderedlayout.VerticalLayout
